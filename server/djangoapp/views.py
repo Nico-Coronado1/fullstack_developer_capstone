@@ -8,7 +8,7 @@ from django.contrib.auth import logout
 from .models import CarModel, CarMake
 # from django.contrib import messages
 # from datetime import datetime
-    from .restapis import get_request, analyze_review_sentiments, post_review
+from .restapis import get_request, analyze_review_sentiments, post_review
 
 from django.http import JsonResponse
 from django.contrib.auth import login, authenticate
@@ -133,5 +133,3 @@ def add_review(request):
 
 
 
-
-                path(route='add_review', view=views.add_review, name='add_review'),        path(route='add_review', view=views.add_review, name='add_review'),    path(route='add_review', view=views.add_review, name='add_review'),
